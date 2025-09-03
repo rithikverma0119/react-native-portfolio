@@ -3,36 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rithik Verma - React Native Developer</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Rithik Verma - React Native Developer Portfolio</title>
+    <meta name="description" content="Professional React Native developer with 3+ years experience building cross-platform mobile applications">
+    <meta name="keywords" content="React Native, Mobile Developer, JavaScript, TypeScript, iOS, Android">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Rithik Verma - React Native Developer">
+    <meta property="og:description" content="Professional React Native developer portfolio showcasing mobile app development expertise">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rithikverma-portfolio.netlify.app">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📱</text></svg>">
+    
+    <!-- External Resources -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader">
+            <div class="phone-loader">
+                <div class="screen"></div>
+            </div>
+            <p>Loading Portfolio...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
     <header class="header">
         <nav class="nav">
             <div class="nav-brand">
-                <h2>Rithik Verma</h2>
-                <p>React Native Developer</p>
+                <div class="logo">
+                    <i class="fas fa-mobile-alt"></i>
+                    <span>RV</span>
+                </div>
+                <div class="brand-text">
+                    <h2>Rithik Verma</h2>
+                    <p>React Native Developer</p>
+                </div>
             </div>
             <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#resume">Resume</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </header>
 
     <main>
         <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-content">
-                <h1>React Native App Developer</h1>
-                <p>Building cross-platform mobile applications with modern technologies</p>
-                <div class="hero-buttons">
-                    <a href="#resume" class="btn btn-primary">View Resume</a>
-                    <a href="#projects" class="btn btn-secondary">See Projects</a>
+        <section id="home" class="hero">
+            <div class="hero-background">
+                <div class="floating-shapes">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                    <div class="shape shape-4"></div>
+                </div>
+            </div>
+            <div class="hero-content" data-aos="fade-up">
+                <div class="hero-text">
+                    <h1>
+                        <span class="greeting">Hello, I'm</span>
+                        <span class="name">Rithik Verma</span>
+                        <span class="title">React Native Developer</span>
+                    </h1>
+                    <p class="hero-description">
+                        I craft beautiful, performant cross-platform mobile applications 
+                        that deliver exceptional user experiences on both iOS and Android.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number" data-count="3">0</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-count="15">0</span>
+                            <span class="stat-label">Apps Built</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-count="100">0</span>
+                            <span class="stat-label">K+ Users</span>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fas fa-rocket"></i>
+                            View My Work
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fas fa-envelope"></i>
+                            Get In Touch
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="phone-mockup">
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <div class="app-demo">
+                                    <div class="demo-header">
+                                        <div class="demo-avatar"></div>
+                                        <div class="demo-text">
+                                            <div class="demo-line"></div>
+                                            <div class="demo-line short"></div>
+                                        </div>
+                                    </div>
+                                    <div class="demo-content">
+                                        <div class="demo-card"></div>
+                                        <div class="demo-card"></div>
+                                        <div class="demo-card"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -40,179 +137,294 @@
         <!-- About Section -->
         <section id="about" class="about">
             <div class="container">
-                <h2>About Me</h2>
-                <p>Passionate React Native developer with expertise in building high-performance, cross-platform mobile applications. Experienced in JavaScript, TypeScript, and modern mobile development practices.</p>
+                <div class="section-header" data-aos="fade-up">
+                    <h2>About Me</h2>
+                    <p>Passionate about creating mobile experiences that matter</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-text" data-aos="fade-right">
+                        <h3>Building the Future of Mobile Apps</h3>
+                        <p>
+                            With over 3 years of experience in React Native development, I specialize in 
+                            creating high-performance, scalable mobile applications that work seamlessly 
+                            across iOS and Android platforms.
+                        </p>
+                        <p>
+                            My expertise spans from architecting complex state management solutions to 
+                            implementing pixel-perfect UI designs. I'm passionate about writing clean, 
+                            maintainable code and staying up-to-date with the latest mobile development trends.
+                        </p>
+                        <div class="about-highlights">
+                            <div class="highlight">
+                                <i class="fas fa-code"></i>
+                                <span>Clean Code Advocate</span>
+                            </div>
+                            <div class="highlight">
+                                <i class="fas fa-users"></i>
+                                <span>Team Collaborator</span>
+                            </div>
+                            <div class="highlight">
+                                <i class="fas fa-lightbulb"></i>
+                                <span>Problem Solver</span>
+                            </div>
+                        </div>
+                        <a href="resume.pdf" class="btn btn-outline" download>
+                            <i class="fas fa-download"></i>
+                            Download Resume
+                        </a>
+                    </div>
+                    <div class="about-visual" data-aos="fade-left">
+                        <div class="tech-stack">
+                            <div class="tech-item">
+                                <i class="fab fa-react"></i>
+                                <span>React Native</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fab fa-js-square"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fab fa-node-js"></i>
+                                <span>TypeScript</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fas fa-database"></i>
+                                <span>Redux</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fab fa-firebase"></i>
+                                <span>Firebase</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fab fa-git-alt"></i>
+                                <span>Git</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- Resume Section -->
-        <section id="resume" class="resume">
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
             <div class="container">
-                <h2>Resume</h2>
-                
-                <!-- Contact Info -->
-                <div class="resume-header">
-                    <h3>Rithik Verma</h3>
-                    <p class="title">React Native App Developer</p>
-                    <div class="contact-info">
-                        <span><i class="fas fa-envelope"></i> vermarithik877@gmail.com</span>
-                        <span><i class="fab fa-github"></i> github.com/rithikverma0119</span>
-                        <span><i class="fas fa-map-marker-alt"></i> India</span>
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Technical Skills</h2>
+                    <p>Technologies I work with to bring ideas to life</p>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                        <div class="category-header">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h3>Mobile Development</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span>React Native</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="95"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>Expo</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>React Navigation</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="92"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>Native Modules</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                        <div class="category-header">
+                            <i class="fas fa-code"></i>
+                            <h3>Programming</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span>JavaScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="93"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>TypeScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="88"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>Java</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>Swift</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="70"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                        <div class="category-header">
+                            <i class="fas fa-cogs"></i>
+                            <h3>State Management</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span>Redux Toolkit</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>Context API</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>Zustand</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="82"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>MobX</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+                        <div class="category-header">
+                            <i class="fas fa-server"></i>
+                            <h3>Backend & APIs</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span>REST APIs</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="92"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>GraphQL</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>Firebase</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="88"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>Node.js</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <!-- Professional Summary -->
-                <div class="resume-section">
-                    <h4>Professional Summary</h4>
-                    <p>Experienced React Native developer with 3+ years of expertise in building cross-platform mobile applications. Proficient in JavaScript, TypeScript, Redux, and modern mobile development frameworks. Strong background in UI/UX implementation, API integration, and performance optimization.</p>
+        <!-- Experience Section -->
+        <section id="experience" class="experience">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Professional Experience</h2>
+                    <p>My journey in mobile app development</p>
                 </div>
-
-                <!-- Technical Skills -->
-                <div class="resume-section">
-                    <h4>Technical Skills</h4>
-                    <div class="skills-grid">
-                        <div class="skill-category">
-                            <h5>Mobile Development</h5>
-                            <ul>
-                                <li>React Native</li>
-                                <li>Expo</li>
-                                <li>React Navigation</li>
-                                <li>Native Modules</li>
+                <div class="timeline">
+                    <div class="timeline-item" data-aos="fade-right">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Senior React Native Developer</h3>
+                                <span class="company">Tech Solutions Inc.</span>
+                                <span class="duration">2022 - Present</span>
+                            </div>
+                            <ul class="achievements">
+                                <li>Led development of 5+ cross-platform mobile applications serving 100K+ active users</li>
+                                <li>Implemented complex UI animations using React Native Reanimated 3</li>
+                                <li>Optimized app performance resulting in 40% faster load times</li>
+                                <li>Mentored 3 junior developers and established coding standards</li>
+                                <li>Integrated payment gateways, social media APIs, and analytics platforms</li>
                             </ul>
+                            <div class="tech-tags">
+                                <span>React Native</span>
+                                <span>TypeScript</span>
+                                <span>Redux Toolkit</span>
+                                <span>Firebase</span>
+                            </div>
                         </div>
-                        <div class="skill-category">
-                            <h5>Programming Languages</h5>
-                            <ul>
-                                <li>JavaScript (ES6+)</li>
-                                <li>TypeScript</li>
-                                <li>Java</li>
-                                <li>Swift (Basic)</li>
+                    </div>
+
+                    <div class="timeline-item" data-aos="fade-left">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>React Native Developer</h3>
+                                <span class="company">Mobile Innovations Ltd.</span>
+                                <span class="duration">2021 - 2022</span>
+                            </div>
+                            <ul class="achievements">
+                                <li>Built e-commerce mobile app with secure payment integration</li>
+                                <li>Implemented push notifications and real-time chat functionality</li>
+                                <li>Collaborated with design team for pixel-perfect UI implementation</li>
+                                <li>Participated in agile development and sprint planning</li>
                             </ul>
+                            <div class="tech-tags">
+                                <span>React Native</span>
+                                <span>Redux</span>
+                                <span>REST APIs</span>
+                                <span>Socket.io</span>
+                            </div>
                         </div>
-                        <div class="skill-category">
-                            <h5>State Management</h5>
-                            <ul>
-                                <li>Redux Toolkit</li>
-                                <li>Context API</li>
-                                <li>Zustand</li>
-                                <li>MobX</li>
+                    </div>
+
+                    <div class="timeline-item" data-aos="fade-right">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Junior Mobile Developer</h3>
+                                <span class="company">StartUp Hub</span>
+                                <span class="duration">2020 - 2021</span>
+                            </div>
+                            <ul class="achievements">
+                                <li>Developed mobile applications using React Native and Expo</li>
+                                <li>Integrated REST APIs and implemented data persistence</li>
+                                <li>Worked on bug fixes and feature enhancements</li>
+                                <li>Learned mobile development best practices</li>
                             </ul>
-                        </div>
-                        <div class="skill-category">
-                            <h5>Backend & APIs</h5>
-                            <ul>
-                                <li>REST APIs</li>
-                                <li>GraphQL</li>
-                                <li>Firebase</li>
-                                <li>Node.js</li>
-                            </ul>
+                            <div class="tech-tags">
+                                <span>React Native</span>
+                                <span>Expo</span>
+                                <span>JavaScript</span>
+                                <span>AsyncStorage</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <!-- Experience -->
-                <div class="resume-section">
-                    <h4>Professional Experience</h4>
-                    
-                    <div class="experience-item">
-                        <div class="experience-header">
-                            <h5>Senior React Native Developer</h5>
-                            <span class="duration">2022 - Present</span>
-                        </div>
-                        <p class="company">Tech Solutions Inc.</p>
-                        <ul class="achievements">
-                            <li>Developed and maintained 5+ cross-platform mobile applications serving 100K+ users</li>
-                            <li>Implemented complex UI components and animations using React Native Reanimated</li>
-                            <li>Integrated third-party services including payment gateways, social media APIs, and analytics</li>
-                            <li>Optimized app performance resulting in 40% faster load times and improved user retention</li>
-                            <li>Mentored junior developers and conducted code reviews</li>
-                        </ul>
-                    </div>
-
-                    <div class="experience-item">
-                        <div class="experience-header">
-                            <h5>React Native Developer</h5>
-                            <span class="duration">2021 - 2022</span>
-                        </div>
-                        <p class="company">Mobile Innovations Ltd.</p>
-                        <ul class="achievements">
-                            <li>Built e-commerce mobile app with Redux for state management and secure payment integration</li>
-                            <li>Implemented push notifications and real-time chat functionality</li>
-                            <li>Collaborated with design team to create pixel-perfect UI implementations</li>
-                            <li>Participated in agile development process and sprint planning</li>
-                        </ul>
-                    </div>
-
-                    <div class="experience-item">
-                        <div class="experience-header">
-                            <h5>Junior Mobile Developer</h5>
-                            <span class="duration">2020 - 2021</span>
-                        </div>
-                        <p class="company">StartUp Hub</p>
-                        <ul class="achievements">
-                            <li>Developed mobile applications using React Native and Expo</li>
-                            <li>Integrated REST APIs and implemented data persistence with AsyncStorage</li>
-                            <li>Worked on bug fixes and feature enhancements</li>
-                            <li>Learned mobile development best practices and coding standards</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Education -->
-                <div class="resume-section">
-                    <h4>Education</h4>
-                    <div class="education-item">
-                        <div class="education-header">
-                            <h5>Bachelor of Technology in Computer Science</h5>
-                            <span class="duration">2016 - 2020</span>
-                        </div>
-                        <p class="institution">Indian Institute of Technology</p>
-                        <p class="grade">CGPA: 8.5/10</p>
-                    </div>
-                </div>
-
-                <!-- Certifications -->
-                <div class="resume-section">
-                    <h4>Certifications</h4>
-                    <ul class="certifications">
-                        <li>React Native Certified Developer - Meta (2023)</li>
-                        <li>JavaScript Algorithms and Data Structures - freeCodeCamp (2022)</li>
-                        <li>Mobile App Development with React Native - Coursera (2021)</li>
-                        <li>AWS Certified Cloud Practitioner (2023)</li>
-                    </ul>
-                </div>
-
-                <!-- Projects Highlight -->
-                <div class="resume-section">
-                    <h4>Key Projects</h4>
-                    <div class="project-item">
-                        <h5>FoodDelivery App</h5>
-                        <p>Cross-platform food delivery application with real-time tracking, payment integration, and user reviews. Built with React Native, Redux, and Firebase.</p>
-                        <div class="project-tech">
-                            <span>React Native</span>
-                            <span>Redux</span>
-                            <span>Firebase</span>
-                            <span>Maps API</span>
-                        </div>
-                    </div>
-                    
-                    <div class="project-item">
-                        <h5>Fitness Tracker</h5>
-                        <p>Health and fitness tracking app with workout plans, progress monitoring, and social features. Integrated with wearable devices and health APIs.</p>
-                        <div class="project-tech">
-                            <span>React Native</span>
-                            <span>TypeScript</span>
-                            <span>HealthKit</span>
-                            <span>Charts</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Download Resume Button -->
-                <div class="resume-download">
-                    <a href="#" class="btn btn-primary" onclick="window.print()">
-                        <i class="fas fa-download"></i> Download Resume
-                    </a>
                 </div>
             </div>
         </section>
@@ -220,35 +432,160 @@
         <!-- Projects Section -->
         <section id="projects" class="projects">
             <div class="container">
-                <h2>Featured Projects</h2>
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Featured Projects</h2>
+                    <p>Some of my best work in mobile app development</p>
+                </div>
                 <div class="projects-grid">
-                    <div class="project-card">
-                        <h3>E-Commerce App</h3>
-                        <p>Full-featured shopping app with cart, payments, and user profiles</p>
-                        <div class="project-tech">
-                            <span>React Native</span>
-                            <span>Redux</span>
-                            <span>Stripe</span>
+                    <div class="project-card featured" data-aos="zoom-in">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project-mockup">
+                                <div class="phone-preview">
+                                    <div class="screen-content food-app"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>FoodDelivery App</h3>
+                                <span class="project-type">Featured Project</span>
+                            </div>
+                            <p>
+                                A comprehensive food delivery application with real-time order tracking, 
+                                secure payment integration, restaurant discovery, and user reviews. 
+                                Built with React Native and Firebase.
+                            </p>
+                            <div class="project-features">
+                                <span><i class="fas fa-check"></i> Real-time tracking</span>
+                                <span><i class="fas fa-check"></i> Payment gateway</span>
+                                <span><i class="fas fa-check"></i> Push notifications</span>
+                                <span><i class="fas fa-check"></i> User reviews</span>
+                            </div>
+                            <div class="project-tech">
+                                <span>React Native</span>
+                                <span>Redux</span>
+                                <span>Firebase</span>
+                                <span>Maps API</span>
+                                <span>Stripe</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="project-card">
-                        <h3>Social Media App</h3>
-                        <p>Instagram-like app with photo sharing, stories, and real-time chat</p>
-                        <div class="project-tech">
-                            <span>React Native</span>
-                            <span>Firebase</span>
-                            <span>Camera API</span>
+
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project-mockup">
+                                <div class="phone-preview">
+                                    <div class="screen-content fitness-app"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Fitness Tracker</h3>
+                            <p>
+                                Health and fitness tracking app with workout plans, progress monitoring, 
+                                and social features. Integrated with wearable devices.
+                            </p>
+                            <div class="project-tech">
+                                <span>React Native</span>
+                                <span>TypeScript</span>
+                                <span>HealthKit</span>
+                                <span>Charts</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="project-card">
-                        <h3>Weather App</h3>
-                        <p>Beautiful weather app with forecasts, maps, and location services</p>
-                        <div class="project-tech">
-                            <span>React Native</span>
-                            <span>Weather API</span>
-                            <span>Maps</span>
+
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project-mockup">
+                                <div class="phone-preview">
+                                    <div class="screen-content social-app"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Social Media App</h3>
+                            <p>
+                                Instagram-like social media app with photo sharing, stories, 
+                                real-time chat, and social interactions.
+                            </p>
+                            <div class="project-tech">
+                                <span>React Native</span>
+                                <span>Firebase</span>
+                                <span>Camera API</span>
+                                <span>Socket.io</span>
+                            </div>
                         </div>
                     </div>
+
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project-mockup">
+                                <div class="phone-preview">
+                                    <div class="screen-content weather-app"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Weather App</h3>
+                            <p>
+                                Beautiful weather application with detailed forecasts, 
+                                interactive maps, and location-based services.
+                            </p>
+                            <div class="project-tech">
+                                <span>React Native</span>
+                                <span>Weather API</span>
+                                <span>Maps</span>
+                                <span>Animations</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects-cta" data-aos="fade-up">
+                    <p>Want to see more of my work?</p>
+                    <a href="https://github.com/rithikverma0119" class="btn btn-outline">
+                        <i class="fab fa-github"></i>
+                        View All Projects
+                    </a>
                 </div>
             </div>
         </section>
@@ -256,32 +593,121 @@
         <!-- Contact Section -->
         <section id="contact" class="contact">
             <div class="container">
-                <h2>Get In Touch</h2>
-                <p>Let's discuss your next mobile app project</p>
-                <div class="contact-links">
-                    <a href="mailto:vermarithik877@gmail.com" class="contact-link">
-                        <i class="fas fa-envelope"></i>
-                        Email Me
-                    </a>
-                    <a href="https://github.com/rithikverma0119" class="contact-link">
-                        <i class="fab fa-github"></i>
-                        GitHub
-                    </a>
-                    <a href="https://linkedin.com/in/rithikverma" class="contact-link">
-                        <i class="fab fa-linkedin"></i>
-                        LinkedIn
-                    </a>
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Let's Work Together</h2>
+                    <p>Ready to bring your mobile app idea to life?</p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info" data-aos="fade-right">
+                        <h3>Get In Touch</h3>
+                        <p>
+                            I'm always interested in new opportunities and exciting projects. 
+                            Whether you have a question or just want to say hi, feel free to reach out!
+                        </p>
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="method-info">
+                                    <h4>Email</h4>
+                                    <a href="mailto:vermarithik877@gmail.com">vermarithik877@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </div>
+                                <div class="method-info">
+                                    <h4>LinkedIn</h4>
+                                    <a href="https://linkedin.com/in/rithikverma">linkedin.com/in/rithikverma</a>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fab fa-github"></i>
+                                </div>
+                                <div class="method-info">
+                                    <h4>GitHub</h4>
+                                    <a href="https://github.com/rithikverma0119">github.com/rithikverma0119</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form" data-aos="fade-left">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" required>
+                                <label for="name">Your Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" required>
+                                <label for="email">Your Email</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="subject" name="subject" required>
+                                <label for="subject">Subject</label>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                                <label for="message">Your Message</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i>
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Rithik Verma. All rights reserved.</p>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>RV</span>
+                    </div>
+                    <p>Building the future of mobile applications</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Connect</h4>
+                        <div class="social-links">
+                            <a href="https://github.com/rithikverma0119"><i class="fab fa-github"></i></a>
+                            <a href="https://linkedin.com/in/rithikverma"><i class="fab fa-linkedin"></i></a>
+                            <a href="mailto:vermarithik877@gmail.com"><i class="fas fa-envelope"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Rithik Verma. All rights reserved. Built with ❤️ and React Native expertise.</p>
+            </div>
         </div>
     </footer>
 
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
